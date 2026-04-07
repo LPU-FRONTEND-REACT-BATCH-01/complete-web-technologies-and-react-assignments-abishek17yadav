@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>React Clone</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1e1e2f;
+            color: white;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 40px;
+        }
+
+        .nav-left {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Search Bar */
+        .search-box {
+            flex: 1;
+            text-align: center;
+        }
+
+        .search-box input {
+            width: 300px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            background-color: #2a2a40;
+            color: white;
+        }
+
+        .search-box input::placeholder {
+            color: #aaa;
+        }
+
+        .nav-right a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #ccc;
+        }
+
+        .nav-right a:hover {
+            color: white;
+        }
+
+        /* Center Section */
+        .container {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .logo {
+            font-size: 60px;
+            color: #61dafb;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 20px;
+            color: #bbb;
+        }
+
+        /* Buttons */
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            border-radius: 25px;
+            border: none;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .primary {
+            background-color: #61dafb;
+            color: black;
+        }
+
+        .secondary {
+            background-color: transparent;
+            border: 1px solid #aaa;
+            color: white;
+        }
+
+        .secondary:hover {
+            border-color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+   <div class="navbar">
+        <div class="nav-left">⚛️ v19.2</div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search... (Ctrl + K)">
+        </div>
+
+        <div class="nav-right">
+            <a href="#">Learn</a>
+            <a href="#">Reference</a>
+            <a href="#">Community</a>
+            <a href="#">Blog</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="logo"><img src="https://tse3.mm.bing.net/th/id/OIP.su9hs85gET1m-y7MOmtgngHaD4?pid=Api&P=0&h=180" alt=""></div>
+        <h1>React</h1>
+        <p>The library for web and native user interfaces</p>
+
+        <div class="buttons">
+            <button class="btn primary">Learn React</button>
+            <button class="btn secondary">API Reference</button>
+        </div>
+    </div>
+
+</body>
+</html>
