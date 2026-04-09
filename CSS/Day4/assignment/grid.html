@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <style>
+        body {
+            background-color: #24294e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 150px);
+            grid-template-rows: repeat(3, 120px);
+            gap: 10px;
+           
+        }
+
+        .green {
+             background-color:green; 
+            }
+        .red { 
+            background-color:red;
+         }
+        .orange {
+             background-color:orange; 
+            }
+
+            .g1{
+            
+            }
+
+            
+
+       
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="green g1"></div>
+        <div class="green g2"></div>
+        <div class="red r1"></div>
+        <div class="orange o1"></div>
+        <div class="red r2"></div>
+        <div class="red r3"></div>
+        <div class="orange o2"></div>
+        <div class="green g3"></div>
+    </div>
+
+</body>
+</html>
