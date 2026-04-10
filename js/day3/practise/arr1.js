@@ -13,6 +13,16 @@ arr.sort((a,b)=>{
 });
 console.log(arr)
 
+let arr2 = [1, 2, 3, 4];
+
+// let result = arr2.filter(function(x) {
+//   return x > 2;
+// });
+
+let result = arr2.filter((ele)=> ele>2)
+
+console.log(result);
+
 
 
 
