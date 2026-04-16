@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+    <style>
+        .card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Product List</h2>
+<div id="productContainer"></div>
+
+<script>
+async function getProducts() {
+    try {
+        let response = await fetch("https://dummyjson.com/products");
+        let result = await response.json();
+
+        let data = result.products;
+
+        console.log(data); // 🔍 check in console
+
+        let container = document.getElementById("productContainer");
+
+        let productHTML = data.map(product => {
+            return `
+                <div class="card">
+                    <img src="${product.thumbnail}" width="100">
+                    <h4>${product.title}</h4>
+                    <p>₹ ${product.price}</p>
+                </div>
+            `;
+        }).join("");
+
+        container.innerHTML = productHTML;
+
+    } catch (error) {
+        console.log("Error:", error);
+    }
+}
+
+getProducts();
+</script>
+
+</body>
+</html>

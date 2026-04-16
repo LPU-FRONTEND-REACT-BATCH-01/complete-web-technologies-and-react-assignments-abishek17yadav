@@ -1,0 +1,36 @@
+body {
+  background-color: #24294e; /* The dark blue background from your image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  /* Defining 4 columns and 3 rows */
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(3, 120px);
+  gap: 10px;
+  
+  /* Mapping the layout visually */
+  grid-template-areas: 
+    "tall-L wide-T wide-T red-T"
+    "tall-L orange-M red-M tall-R"
+    "tall-L red-B orange-B tall-R";
+}
+
+/* Base styles for all boxes */
+.item {
+  border-radius: 4px;
+}
+
+.green-tall-left  { grid-area: tall-L; background-color: #72c354; }
+.green-wide-top   { grid-area: wide-T; background-color: #72c354; }
+.red-small-top    { grid-area: red-T;  background-color: #ed4040; }
+.orange-small     { grid-area: orange-M; background-color: #fdb131; }
+.red-small-mid    { grid-area: red-M;  background-color: #ed4040; }
+.red-small-bottom { grid-area: red-B;  background-color: #ed4040; }
+.orange-small-bottom { grid-area: orange-B; background-color: #fdb131; }
+.green-tall-right { grid-area: tall-R; background-color: #72c354; }
